@@ -7,16 +7,16 @@ Send messages to element.io messanger from python
 ### Usage example
 
 ```
-element = Element(email = "your_mail@mail.ru", password = "secret_password"))
+element = Element(messanger_path="https://host.ru", email = "your_mail@mail.ru", password = "secret_password"))
 ```
 OR use a token (preferred way). It'll not create additional session
 ```
-element = Element(token = "secret_token"))
+element = Element(messanger_path="https://host.ru", token = "secret_token"))
 ```
 
 If you don't have token get it:
 ```
-element = Element(email = "your_mail@mail.ru", password = "secret_password"))
+element = Element(messanger_path="https://host.ru", email = "your_mail@mail.ru", password = "secret_password"))
 token = element.get_token()
 ```
 
